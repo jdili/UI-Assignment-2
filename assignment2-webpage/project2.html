@@ -1,0 +1,58 @@
+<?doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Accessibility Course Overview</title>
+  <link rel="stylesheet" href="project2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="project2.js"></script>
+</head>
+<body>
+<div class="offscreen">Main Content</div>
+<div class="container">
+<nav class="navigation">
+  <a href="#home"><img src="pics/home.png" alt="Link to Home page"></a><a href="#links" ><img src="pics/links.png" alt="Link to List of Other Links"></a> <a href="#signup" alt="Link to Sign-up form"><img src="pics/signup.png" alt="Link to Sign-up form"></a>
+</nav>
+
+<h1 id="accessibilitybanner" alt="Banner image with text that reads 'Accessibility Overview'" tabindex="0"></h1>
+
+  <h2 id="thevideo">
+<iframe width="480" height="360"
+  src="https://youtube.com/embed/M66NV_7GJUk">
+</iframe>
+  </h2>
+
+
+<h2 id="links" class="heading2">Links</h2>
+<img src="pics/dot.png" alt="bullet point">&nbsp;<a href="https://www.barnardhci.com">Accessibility Research at Hamilton</a><br>
+<img src="pics/dot.png" alt="bullet point">&nbsp;<a href="https://www.hamilton.edu/offices/dos/accessibility">Disability Services at Hamilton</a><br>
+<img src="pics/dot.png" alt="bullet point">&nbsp;<a href="https://xkcd.com/">XKCD</a><br>
+  <img src="pics/dot.png" alt="bullet point">&nbsp;<a href="https://www.youtube.com/watch?v=HtTyRajRuyY">A11ycasts Videos</a>
+
+<h2 id="signup" class="heading2">Sign Up!</h2>
+<form id="sign-up-form">
+
+<p>
+  <label for="fn">First Name:</label> <input type="text" size="10" name="fn" id="fn" autocomplete="First Name"> <label for="mi">Middle Initial:</label> <input type="text" size="1" name="mi" id="mi" autocomplete="Middle Initial">. <label for="ln">Last Name:</label> <input type="text" size="10" name="ln" id="ln" autocomplete="Last Name"><br>
+</p>
+<p>
+  <label for="em">Email:</label>
+  <input id="em" type="text" size="20" autocomplete="email">
+</p>
+<p>
+  <label for="receivespamcheckbox">Would you like to receive occasional emails with offers from us?</label>
+  <input type="checkbox" name="receivespamcheckbox" id="receivespamcheckbox"
+         role="checkbox" tabindex="0" value="n">
+  </input>
+
+</p>
+<p>
+  <label for="comments">Comments:</label><br>
+  <textarea id="comments" rows="5" cols="40" autocomplete="comments"></textarea>
+</p>
+ <input type="button" value="Sign Up!" id="signupbutton">
+</form>
+
+</div><!-- end div.container -->
+</body>
+</html>
